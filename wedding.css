@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.helyek,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;  
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color:#99FFFF;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+
+
+
+.cover {
+  background: url('https://i.imgur.com/RzmsucN.png') no-repeat 100% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0.5rem;
+  
+  
+}
+
+@media (min-width: 768px) {
+
+ .cover {
+    background: url('https://i.imgur.com/RzmsucN.png') no-repeat center/cover;
+  }
+
+}
+
+
+.text-doboz {
+  display: table-cell;
+  vertical-align: middle;   
+  padding-top: 30rem;
+}
+  
+.text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+  
+.text h1 {
+  font-size: 3.15rem;
+  font-family: 'Great Vibes', cursive;
+  color: #FFFFCC;
+  margin: 0;   
+}
+
+@media (min-width: 768px) {
+
+  .text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+}
+
+  
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+  
+/*megjegy*/
+
+
+
+.megjegy img {
+  height: 10rem;
+}
+  
+.megjegy h3 {
+  font-size: 32px;
+  font-family: 'Monotype Corsiva', sans-serif;
+}
+
+.megjegy div {
+  font-family: 'Century Gothic', sans-serif;
+}
+  
+.megjegy::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;      
+}
+
+@media (min-width: 768px) {
+
+  .megjegy {
+    display: inline-block;
+    width: 22%;
+    padding: 1.2rem;
+    margin: .4rem;
+  }
+
+  .megjegy::after {
+    display: none;
+  }
+
+}
+
+
+/*--program ---*/
+  
+.program {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,20%,0%,.5);
+  color: #FFFFCC;
+  font-family: 'Century Gothic', sans-serif;
+  
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+ 
+@media (min-width: 768px) {
+
+  .program-doboz{
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+
+/*---ajándék--*/
+
+.gifts img {
+  height: 10rem;
+}
+  
+.gifts p:last-child {  
+  margin-bottom: 0;
+}
+
+
+
+/*--kérdések----*/
+
+.faq {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,20%,0%,.5);
+  color: #FFFFCC;
+  
+}
+
+.faq h2 {
+  margin-top: 1rem; 
+}
+
+.faq p {
+  font-family: 'Century Gothic', sans-serif;
+  text-align: left;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.kerdes {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.valasz {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+}
+
+
+/*.--kapcsolat---*/
+
+.contact a{
+  text-decoration: none;
+  color:#BF0000;
+}
+
+.contact a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Century Gothic', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
